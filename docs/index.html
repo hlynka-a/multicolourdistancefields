@@ -6,7 +6,8 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="MULTI-COLOUR DISTANCE FIELDS - Hlynka, Mould">
+  <meta name="title" content="MULTI-COLOUR DISTANCE FIELDS">
+  <meta name="title" content="MULTI-COLOR DISTANCE FIELDS">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="We enhance 2D signed-distance fields to better preserve small details, and to render multiple colours from images.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -104,52 +105,42 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "MULTI-COLOUR DISTANCE FIELDS",
+    "description": "We enhance Signed-Distance Fields to better retain thin details and enable them to render multi-colour images.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Andrew W. Hlynka",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Carleton University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "David Mould",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Carleton University"
         }
       }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2024-06-09",
     "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "@type": "ACM",
+      "name": "GRAPHICS INTERFACE 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "url": "https://hlynka-a.github.io/multicolourdistancefields/",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "keywords": ["Distance Fields", "Real-Time Rendering", "Image-Based Rendering"],
+    "abstract": "Distance field rendering is an effective technique to render low resolution vector-like raster assets with sharp detail. In 2D, this technique is commonly used to render simplified mono-colour elements such as text or glyphs alongside 3D objects.We extend signed distance fields for improved rendering of crisp outlines and rendering interior multi-colour regions. Outlines are rendered through a nonlinear distance metric that prevents detail loss during downsampling. Interior regions are represented through a fixed number of four distance field channels, plus four channels to store colour indices, inspired by the four-colour mapping problem. Our method enables cartoon-like sprites, images, and icons to be rendered at high quality with reduced storage and memory requirements for real-time rendering.",
     "citation": "BIBTEX_CITATION_HERE",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+      "@id": "https://hlynka-a.github.io/multicolourdistancefields/"
+    }
   }
   </script>
   
@@ -158,13 +149,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "name": "Graphics, Imaging and Games Lab - Carleton University",
+    "url": "https://gigl.scs.carleton.ca/",
+    "logo": "https://gigl.scs.carleton.ca/images/gigl_logo_small.png",
   }
   </script>
 </head>
@@ -213,7 +200,9 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Multi-Colour Distance Fields</h1>
+            <h1 class="title is-1 publication-title">Multi-Colour Distance Fields*</h1>
+			<h4>* or Multi-Color Distance Fields, depending on your region!</h4>
+			<br>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -231,7 +220,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                        <a href="https://github.com/hlynka-a/multicolourdistancefields/tree/main/docs/static/pdfs" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -242,7 +231,7 @@
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://github.com/hlynka-a/multicolourdistancefields/tree/main/docs/static/pdfs" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -280,24 +269,29 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
-<section class="hero teaser">
+<!--<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
         <source src="static/videos/banner_video.mp4" type="video/mp4">
       </video>
-      <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/df_cover_image_v04_jpg.jpg" alt="cover image" loading="lazy"/>
+      <h3 class="subtitle has-text-centered">
+        From left to right: a) the original input image (512x512), b) the output render using RelSDF+RegSDF (256x256 fields), c) visualization of RelSDF, and d) visualization of RegSDF.
+      </h3>
+    </div>
+  </div>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -308,7 +302,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            (THIS IS STILL UNDER CONSTRUCTION! COME BACK LATER!)
+            Distance field rendering is an effective technique to render low resolution vector-like raster assets with sharp detail. In 2D, this technique is commonly used to render simplified mono-colour elements such as text or glyphs alongside 3D objects. We extend signed distance fields for improved rendering of crisp outlines and rendering interior multi-colour regions. Outlines are rendered through a nonlinear distance metric that prevents detail loss during downsampling. Interior regions are represented through a fixed number of four distance field channels, plus four channels to store colour indices, inspired by the four-colour mapping problem. Our method enables cartoon-like sprites, images, and icons to be rendered at high quality with reduced storage and memory requirements for real-time rendering.
           </p>
         </div>
       </div>
@@ -317,40 +311,117 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Method - Relative Signed Distance Field (RelSDF)</h2>
+        <div class="content has-text-justified">
+		  <img src="static/images/testout_001_494.7408.png" style="float: right; padding-left: 30px;" alt="relsdf_img" width="256" height="256" loading="lazy"/>
+          <p>
+			A mono-channel SDF. We modified the distance metric to account for both the boundary of shapes and the centre of shapes. 
+          </p>
+		  <p>
+			This required mapping distance to an exponential curve instead of a linear curve, to fit 3 points (let n be the new distance value stored in the field, and f be the true distance value):
+		  </p>
+		  <ol>
+			<li>n = 1.0 when f => 0</li>
+			<li>n = 0.5 when f => shape thickness</li>
+			<li>n = 0.0 when f => +∞</li>
+		  </ol>
+		  <p>Intended for thin details such as outlines, this allows renders at different cutoff values (beyond just 0.5) to accurately depict relative thickness between shapes, and also better retain these thin details when downsampling to lower resolutions.</p>
+        </div>
+		<div>
+		<img src="static/images/relsdf_example_jpg2.jpg" alt="relsdf_img_2" width="2190" height="1265" loading="lazy"/>
+		      <h4 class="subtitle has-text-centered">
+				Comparisons of RelSDF, SDF and DF for a line with varying thickness. Input image 512x512, output renders from fields of 128x128.
+			  </h4>
+		</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Method - Regional Signed Distance Field (RegSDF)</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/regsdf_image_01_jpg3.jpg" style="float: right; padding-left: 30px;" alt="relsdf_img" width="400" height="400" loading="lazy"/>
+          <p>
+			A multi-channel SDF (4 fields + 4 rasters that index to a colour Look-Up Table (LUT)). Assumes input image has regions of colour that are larger than 1 pixel (e.g. cartoons).
+          </p>
+		  <p>Inspired by the Four-Colour Mapping Problem, we propose that 4 overlapping SDFs can represent all coloured regions, such that every region (and their boundaries) is clearly defined with the resulting gradients.</p>
+		  <p>This renders all regions within a image, but does not say what colour to render each region as: we use 4 additional rasters of the same resolution as the fields to point each texel to an index in a LUT.</p>
+		  <p>Together, this enables vector-like rendering of generalized images in raster-based rendering pipelines (e.g. Unity3D, Unreal Engine).</p>
+        </div>
+		<div>
+			<img src="static/images/regsdf_image_02_jpg3.jpg" alt="relsdf_img_2" width="2190" height="1265" loading="lazy"/>
+		      <h4 class="subtitle has-text-centered">
+				Comparisons of original input image and RegSDF render, both from 64x64 fields.
+			  </h4>
+		</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
+  <div class="hero-body" >
+    <div class="container" style="max-width: 1100px; width: 100%; justify-content: center; align-items: center;">
+	  	<h4 class="subtitle has-text-centered">
+	Example image renders<br>(dependent on parameter tuning and quality of colour-extraction method;<br>results are better when there aren't faded edges in the original image).</h4>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <img src="static/images/gi_image_01_jpg2.jpg" alt="render output 1" loading="lazy"/>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+        <img src="static/images/gi_image_02_jpg2.jpg" alt="render output 2" loading="lazy"/>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
+        <img src="static/images/gi_image_03_jpg2.jpg" alt="render output 3" loading="lazy"/>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+      <img src="static/images/gi_image_04_jpg2.jpg" alt="render output 4" loading="lazy"/>
+    </div>
+		<div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/gi_image_05_jpg2.jpg" alt="render output 5" loading="lazy"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gi_image_06_jpg2.jpg" alt="render output 6" loading="lazy"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gi_image_07_jpg2.jpg" alt="render output 7" loading="lazy"/>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/gi_image_08_jpg2.jpg" alt="render output 8" loading="lazy"/>
+    </div>
+	       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/gi_image_09_jpg2.jpg" alt="render output 9" loading="lazy"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gi_image_10_jpg2.jpg" alt="render output 10" loading="lazy"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gi_image_11_jpg2.jpg" alt="render output 11" loading="lazy"/>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/gi_image_12_jpg2.jpg" alt="render output 12" loading="lazy"/>
     </div>
   </div>
 </div>
@@ -372,7 +443,8 @@
           
           <div class="publication-video">
             <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<p>TO BE ADDED LATER.</p>
+            <!--iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
           </div>
         </div>
       </div>
@@ -383,36 +455,30 @@
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!--<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End video carousel -->
 
 
@@ -421,18 +487,17 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!--<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
       <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section>
+  </section>-->
 <!--End paper poster -->
 
 
@@ -447,12 +512,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{hlynka2026multi,
+  title={Multi-Colour Distance Fields},
+  author={Hlynka, Andrew W. and Mould, David},
+  journal={Proceedings of the 52nd Graphics Interface Conference 2026},
+  year={2026}
 }</code></pre>
     </div>
 </section>
