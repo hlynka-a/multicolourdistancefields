@@ -1,2 +1,28 @@
 # Multi-Colour Distance Fields
-Code repository for the project published in the paper "Multi-Colour Distance Fields" (2026).
+
+
+
+Code repository for the project published in the paper 
+
+&#x09;"Multi-Colour Distance Fields" (2026)(Hlynka and Mould).
+
+
+
+To see demo source code in C# / Unity3D, see
+
+&#x09;/Code/
+
+
+
+To see website code and paper pdfs, see
+
+&#x09;/Docs/
+
+or go to 
+
+&#x09;<a href="https://hlynka-a.github.io/multicolourdistancefields/">https://hlynka-a.github.io/multicolourdistancefields/</a>	
+
+
+
+
+
