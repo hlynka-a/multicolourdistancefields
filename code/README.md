@@ -12,10 +12,6 @@ The demo code presented here is written in **C#** and **Unity3D 6000.0.47f1**.
 
 This is presented as a visual demo, with a runtime user interface to dynamically load different images, generate distance fields, and change their render settings.
 
-![demo screenshot][/images/rsdf_editor_screenshot.jpg]
-
-
-
 The scripts most likely relevant to you are
 
 **/Assets/Scripts/df_scripts/DF_Final_DistanceFieldManager.cs**
@@ -25,6 +21,7 @@ The scripts most likely relevant to you are
 
 This demo includes a collection of example images from *OpenClipArt.org*.
 
+![demo screenshot][https://github.com/hlynka-a/multicolourdistancefields/blob/main/code/images/rsdf_editor_screenshot.jpg "Demo Screenshot"]
 
 
 #### F.A.Q.
