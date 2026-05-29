@@ -21,7 +21,7 @@ The scripts most likely relevant to you are
 
 This demo includes a collection of example images from *OpenClipArt.org*.
 
-![demo screenshot][https://github.com/hlynka-a/multicolourdistancefields/blob/main/code/images/rsdf_editor_screenshot.jpg "Demo Screenshot"]
+<img src="/images/rsdf_editor_screenshot.jpg">
 
 
 #### F.A.Q.
