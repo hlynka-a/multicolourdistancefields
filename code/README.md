@@ -39,6 +39,9 @@ This demo includes a collection of example images from *OpenClipArt.org*.
 * [**Do I need to generate the Distance Field data during runtime, every time?**](#q04)
 
 
+* [**My results don't look like what was shown in the paper?**](#q05)
+
+
 
 #### ANSWERS
 
@@ -56,5 +59,8 @@ There are several points in the pipeline where failure can occur for a limited s
 
 [**Do I need to generate the Distance Field data during runtime, every time?**](#q04)<a id="q04"></a>
 
-The demo recreates the Distance Fields on demand every time, but this isn't necessary. The typical pipeline would be to generate your Distance Field data offline, save the data to lossless RGBA files (e.g. .png), and reload them back into a new scene at runtime to immediately render them. Keep in mind that the A value in RGBA values may be treated differently from R, G, or B by Unity3D, and avoid turning on any compression options in the game engine. See the Supplementary Materials .pdf for more details. 
+The demo recreates the Distance Fields on demand every time, but this isn't necessary. The typical pipeline would be to generate your Distance Field data offline, save the data to lossless RGBA files (e.g. .png), and reload them back into a new scene at runtime to immediately render them. Keep in mind that the A value in RGBA values may be treated differently from R, G, or B by Unity3D, and avoid turning on any compression options in the game engine. See the Supplementary Materials .pdf for more details. Some code to save the distance field data to file to reload elsewhere is already present in DF_Final_UI_Manager.cs. 
 
+[**My results don't look like what was shown in the paper?**](#q05)<a id="q05"></a>
+
+Different settings might cause different results in rendering quality, the amount of colours in the resulting distance field, etc. To adjust your settings, try using the user interface during runtime, or look for the corresponding parameters in Unity3D's insepctor panel (or as a last resort, dig through variable values used in the code). Quick options include disabling RelSDF and only generating RegSDF (especially if image does not have an obvious outline or single colour for an outline), and adjusting the Color Tolerance value that determines how similar colours must be to be considered identical during colour matching (see _ColorTolerance in DistanceFieldShaderInteractive.shader). 
